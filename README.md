@@ -15,7 +15,7 @@ Resilio is a distributed, fault-tolerant object storage system designed to store
                                                       | HTTP / REST
                                                       v
                         +===========================================================+
-                        |                 Vault Gateway Coordinator                 |
+                        |                Resilio Gateway Coordinator                |
                         |  - Request Router & Streaming Pipeline                    |
                         |  - Quorum Enforcer (N=3, W=2, R=2 -> Strong Consistency)  |
                         |  - Multipart Upload Engine                                |

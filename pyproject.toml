@@ -3,10 +3,10 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "vault-storage"
+name = "resilio-storage"
 version = "0.1.0"
-description = "Fault-tolerant distributed object storage system"
-authors = [{ name = "Vault Team" }]
+description = "Resilio: Fault-tolerant distributed object storage system evoking resilience and recovery"
+authors = [{ name = "Resilio Team" }]
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
@@ -20,6 +20,7 @@ dependencies = [
 
 [project.scripts]
 vaultctl = "vault.cli:main"
+resilio = "vault.cli:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
