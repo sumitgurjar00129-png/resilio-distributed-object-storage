@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vault &bull; Vault Object Storage Control Plane</title>
+  <title>Resilio &bull; Resilient Distributed Object Storage Control Plane</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1442,13 +1442,12 @@
   <!-- Left Sidebar Navigation (Always Visible Across Pages) -->
   <aside id="mainSidebar" role="navigation" aria-label="Main Navigation">
     <div class="brand-section" onclick="navigateTo('/dashboard')">
-      <div class="brand-logo-wrap">
-        <!-- Crisp Vector Logo Emblem matching reference -->
+      <div class="brand-logo-wrap" title="Resilio: Evoking Resilience & Recovery">
+        <!-- Crisp Vector Logo Emblem: Stylized Resilience 'R' -->
         <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4 6L14 24L24 6C20 9 17 11 14 11C11 11 8 9 4 6Z" fill="url(#vault-logo-grad)" />
-          <path d="M8 4L14 17L20 4C17.5 6 15.5 7 14 7C12.5 7 10.5 6 8 4Z" fill="#00f2fe" opacity="0.85" />
+          <path d="M5 4H15C19.4183 4 23 7.58172 23 12C23 15.6593 20.548 18.7454 17.182 19.6732L23 26H17.5L12.3 20H9V26H5V4ZM9 8V16H14.8C17.0091 16 18.8 14.2091 18.8 12C18.8 9.79086 17.0091 8 14.8 8H9Z" fill="url(#resilio-logo-grad)" />
           <defs>
-            <linearGradient id="vault-logo-grad" x1="4" y1="6" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+            <linearGradient id="resilio-logo-grad" x1="5" y1="4" x2="23" y2="26" gradientUnits="userSpaceOnUse">
               <stop stop-color="#00f2fe" />
               <stop offset="1" stop-color="#8b5cf6" />
             </linearGradient>
@@ -1456,8 +1455,8 @@
         </svg>
       </div>
       <div class="brand-meta">
-        <h1>VAULT <span class="brand-version-badge">v2.4</span></h1>
-        <span>Vault Object Storage Control Plane</span>
+        <h1>RESILIO <span class="brand-version-badge">v2.4</span></h1>
+        <span>Resilience &bull; Recovery &bull; Vault Object Storage</span>
       </div>
     </div>
 
@@ -1796,7 +1795,7 @@
               </div>
 
               <div class="terminal-console" id="terminalFeed">
-                <div class="log-line" data-badge="SYSTEM"><span class="log-ts">[BOOT]</span> <span class="log-badge-system">[SYSTEM]</span> Vault Object Storage control plane online. Strong consistency R+W &gt; N enforced.</div>
+                <div class="log-line" data-badge="SYSTEM"><span class="log-ts">[BOOT]</span> <span class="log-badge-system">[SYSTEM]</span> Resilio Control Plane online. Strong consistency R+W &gt; N enforced.</div>
               </div>
             </div>
           </div>
@@ -2233,7 +2232,7 @@
               </thead>
               <tbody>
                 <tr style="background: rgba(0, 242, 254, 0.04); border-left: 3px solid var(--cyan);">
-                  <td><strong style="color: var(--cyan); font-family: var(--font-mono);">N=3, W=2, R=2 (Active Vault)</strong></td>
+                  <td><strong style="color: var(--cyan); font-family: var(--font-mono);">N=3, W=2, R=2 (Active Resilio)</strong></td>
                   <td><span class="status-badge badge-healthy">Strong (OCC)</span></td>
                   <td>Fast (2/3 ACKs)</td>
                   <td>Fast (2/3 ACKs)</td>
@@ -2631,7 +2630,7 @@
                 <span class="status-badge badge-dead">UNAVAILABLE</span>
               </div>
               <p class="chaos-card-desc">
-                Vault utilizes Crash-Fault-Tolerant (CFT) Quorum Consensus. Byzantine Fault Tolerance (BFT) against malicious colluding nodes is unsupported in local cluster mode.
+                Resilio utilizes Crash-Fault-Tolerant (CFT) Quorum Consensus. Byzantine Fault Tolerance (BFT) against malicious colluding nodes is unsupported in local cluster mode.
               </p>
             </div>
             <button class="btn btn-secondary" style="width: 100%; cursor: not-allowed;" disabled>
@@ -2833,7 +2832,7 @@
         history.pushState({ page: page }, PAGE_TITLES[page], route);
       }
 
-      document.title = `${PAGE_TITLES[page]} &bull; Vault Object Storage`;
+      document.title = `${PAGE_TITLES[page]} &bull; Resilio Distributed Storage`;
       document.getElementById("headerPageTitle").innerText = PAGE_TITLES[page];
 
       document.querySelectorAll(".nav-item").forEach(el => el.classList.remove("active"));

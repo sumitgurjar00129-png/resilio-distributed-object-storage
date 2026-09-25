@@ -1,6 +1,7 @@
-# Vault: Fault-Tolerant Distributed Object Storage System
+# Resilio: Fault-Tolerant Distributed Object Storage System
+*Resilio — evokes resilience and recovery*
 
-Vault is a distributed, fault-tolerant object storage system designed to store, replicate, retrieve, verify, and automatically repair objects across multiple independent storage nodes. It remains available and protects data integrity under node failures, network partitions, and on-disk bitrot corruption.
+Resilio is a distributed, fault-tolerant object storage system designed to store, replicate, retrieve, verify, and automatically repair objects across multiple independent storage nodes. It remains available and protects data integrity under node failures, network partitions, and on-disk bitrot corruption.
 
 ---
 

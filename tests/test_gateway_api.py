@@ -89,4 +89,4 @@ async def test_gateway_rest_api_lifecycle(cluster_env):
         # 8. Web dashboard HTML
         dash_resp = await client.get("/dashboard")
         assert dash_resp.status_code == 200
-        assert "Vault Object Storage" in dash_resp.text
+        assert "Resilio" in dash_resp.text or "Vault Object Storage" in dash_resp.text
