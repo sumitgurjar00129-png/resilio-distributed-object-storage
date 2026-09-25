@@ -4,6 +4,14 @@ venv/
 env/
 ENV/
 
+# Secrets & Environment Variables
+.env
+.env.*
+*.pem
+*.key
+*.cert
+credentials.json
+
 # Python Cache & Bytecode
 __pycache__/
 *.py[cod]
