@@ -1,4 +1,9 @@
 {
+  "functions": {
+    "api/index.py": {
+      "includeFiles": "vault/web/**"
+    }
+  },
   "rewrites": [
     {
       "source": "/(.*)",
@@ -6,3 +11,4 @@
     }
   ]
 }
+
